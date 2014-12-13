@@ -37,7 +37,7 @@
                                           <block type="robot_delay" id="129" inline="true">
                                             <value name="DELAY">
                                               <block type="math_number" id="136">
-                                                <field name="NUM">4000</field>
+                                                <field name="NUM">5000</field>
                                               </block>
                                             </value>
                                             <next>
@@ -52,9 +52,9 @@
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="movement_right" id="187">
+                                                          <block type="movement_stop" id="225">
                                                             <next>
-                                                              <block type="movement_stop" id="225">
+                                                              <block type="movement_right" id="245">
                                                                 <next>
                                                                   <block type="robot_delay" id="189" inline="true">
                                                                     <value name="DELAY">
@@ -72,7 +72,11 @@
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="movement_stop" id="235"></block>
+                                                                              <block type="movement_stop" id="235">
+                                                                                <next>
+                                                                                  <block type="movement_right" id="187"></block>
+                                                                                </next>
+                                                                              </block>
                                                                             </next>
                                                                           </block>
                                                                         </next>
